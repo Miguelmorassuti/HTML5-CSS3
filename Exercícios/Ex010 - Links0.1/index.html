@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="android-chrome-192x192.png" type="image/x-icon">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Utilizando Links Externos</h1>
+    <!-- Da forma a baixo o link e aberto na mesma guia, consequentemente saindo da pagina que o usuario estava visualizando-->
+    <p>Voce pode acessar o meu <a href="https://github.com/Miguelmorassuti/MySql"> repositorio público de MySql no Github</a></p>
+
+    <!--Ja dessa forma o link leva o usuario a uma nova guia e preservando a que ele estava visualizando-->
+    <p>
+        Acesse aqui e veja o que você mais deseja nesse momento <a href="https://twitter.com/patrckpreda/status/1281365446336425984/photo/1" target="_blank" rel="external">aqui</a>
+    </p>
+
+    <!-- Utilizando Links Internos -->
+    <h1>Usando Links Internos</h1>
+    <p>Esta é a primeira pagina do site. Acesse <a href="pag02.html" rel="next" targer="_self">aqui</a> e tenha acesso a proxima pagina</p>
+
+    <!-- Utilizando Links Internos para acessar paginas que estão dentro do pacote (control+espaço  vai sempre te ajuadar)-->
+    <p>Voce também pode acessar a nossa <a href="Noticias/pag03.html"rel="next" target="_self">página de noticias</a></p>
+
+
+    <!-- Baixando arquivos de pastas (pdf e arquivos de textos dependem do navegador para o dowload acontecer)-->
+    <h1>Links para Dowload</h1>
+    <ul>
+        <li><a href="eBook/eBok - Riqueza atraves do Day Trade.txt">Baixar Ebok de como ficar rico atráves do Day Trade</a></li>
+
+       
+    <!-- Compactei em arquivo zip e deixei na pasta, esse formato o dowload ocorre sem problemas-->   
+        <li> Baixar na versão compactada, <a href="eBook/eBok - Riqueza atraves do Day Trade - zip.zip">click aqui</a></li>
+    </ul>
+</body>
+</html>
