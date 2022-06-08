@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midia/favicon-32x32.png" type="image/x-icon">
+    <title>Alocação de Video em sites</title>
+</head>
+<body>
+    <h1>Aprendendo a colocar videos em HTML5 hospedados localmente</h1>
+    <p>Esse video está hospedado no meu proprio servidor</p>
+
+    <!-- Assim como na alocação de imagens, existem 2 formas de inserir videos em aplicações HTML5, sendo que a primeira é de forma mais facil, porém não sera aceita em navegadores que não adotam o formato "MP4"-->
+    
+    <!--<video src="midia/cafe_720p30qs.mp4" width="600" controls></video> -->
+
+
+    <!-- Forma de inserir videos com menor risco do navegador não rodar o video devido a ter mais ipções de reprodução -->
+    <video width="600" poster = "midia/Thumb.jpg" controls> <!--poster=thumbmail--> 
+        <source src="midia/cafe_720p30qs.mp4" type "video/mp4" >
+        <source src="midia/cafe_720p30qs.mkv" type "video/mp4">
+        <source src="midia/cafe_720p30qs.webm" type "video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução automática</p>
+    </video>
+
+        <h1>Inserindo video do YouTube</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/N69qc5MjY6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
