@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    /*height: 100% */
+}
+
+body { 
+    background-image: linear-gradient(to right, #2961FF, #1A87E8 );
+}
+
+
+main {
+    background-color: white;
+    width: 700px;  /*WIDTH = largura*/
+    padding: 20px  /*PADDING = preenchimento, (borda em branco)*/;
+    margin: auto; /*MARGIN = margem (margin:auto serve para centralizar o txt)*/
+    border-radius: 15px; /*RAIO DA BORDA: posso controlar o raio da borda */
+    box-shadow:  5px 5px 15px #062988; /*SOMBRA DA CAIXA: controlo o sombreamento da caixa de texto (sempre utilizar 3 parametros, o primeiro é para a sombra do lado direito, o segundo é para a sombra na parte inferior e o terceiro é para o volume da sombra)*/
+}
+
+h1{
+    color:#1A1AE8;
+    text-align: center; /*ALINHAR TEXTO: Seleciono como o texto vai aparecer*/
+    text-shadow: 1px 1px 2px #040461;
+}
+
+h2{
+    color:#1CD0FF;
+}
+
+
+p{
+    text-align:justify;
+    color:#000000;
+}

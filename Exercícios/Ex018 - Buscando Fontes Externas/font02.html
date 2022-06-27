@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+
+    <!-- é possivel baixar fontes da internte, (DAFONT por exemplo), você seleciona a fonte realiza o dowload, insere ela na pasta do html e com a regra de estilo @font-face voce insere o nome, a url, após isso voce ja pode utilizar a fonte para editar o estilo do texto-->
+    <style>
+        @font-face {
+            font-family: 'Helpme';
+            src: url('fonts/HelpMe.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family:'Helpme', Times, serif;
+            font-size: 2em;
+        }    
+    </style>
+</head>
+<body>
+    <h1>WELCOME IN WELL</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laboriosam porro dolorem vel sunt corrupti ipsam at minima adipisci nihil atque odio consequatur, ullam culpa, distinctio accusamus possimus aspernatur maxime.</p>
+</body>
+</html>
