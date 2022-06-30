@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div:hover{ /*Quando o mouse passar sobre a div a letra ficara red*/
+            color: red;
+        }
+
+        div > p{ /*So vai alterar o paragrafo que esta dentro da Div, o filho */
+            display:none;
+        }
+
+        div:hover > p { /*Qnd o mouse passar sobre a div o filho sera acionado*/
+            display:block;
+            color: white;
+            background-color:aquamarine;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <P>Passe o mouse sobre o texto abaixo</P>
+    <div>Passe o mouse aqui
+        <p>TEXTO ESCONDIDO</p>
+    </div>
+</body>
+</html>

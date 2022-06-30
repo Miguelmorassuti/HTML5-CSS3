@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+           color: red; 
+           text-decoration: none; /*Para tirar o sublinhado dos links*/
+            font-weight: bold;
+        }
+
+        a:visited{ /*Visited é uma pseudo-classe q indica o estado de um link*/
+            color: darkred;
+        }
+
+        a:hover{
+            text-decoration: underline; /*fica sublinhado qnd o mouse passar */
+            color: black;
+        }
+
+        a:active { /*pseudo-classe que funciona quando clicamos*/
+            color:rgb(8, 138, 245) /*quando clicar no mouse, ele fica azul*/
+        }
+
+        a::before{ /*Pseudo-elemento (eles contem ::), nesse caso indica o  */
+            content: '↠';  /*que vai aparecer antes dos links*/
+        }
+        a::after{   /* nesse caso indica o que vai aparecer dps dos links*/
+            content: '↞';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Miguelmorassuti/HTML5-CSS3" target="_blank">Repositorio Github</a></li>
+        <li><a href="https://www.instagram.com/miguelmorassuti/">Instagram Pessoal</a></li>
+        <li><a href="https://www.youtube.com/watch?v=1gwV3FnBTcQ">Flamengo</a></li>
+    </ul>
+</body>
+</html>

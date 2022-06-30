@@ -19,3 +19,16 @@ h1#principal{
     color: white;
     text-align: center;
 }
+
+/*Editando todos os membros das classes abaixo*/
+.basico{
+    color: green;
+}
+
+.intermediario{
+    color: rgb(255, 255, 0);
+}
+
+.avancado{
+    color: red;
+}
