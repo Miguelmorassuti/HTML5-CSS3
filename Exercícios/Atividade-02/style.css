@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@font-face {
+    font-family: idroid;
+    src: url(pacote-projeto-d010/fontes/idroid.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+*{
+    margin: 0px;
+}
+
+nav > a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0px 10px 0px 0px;
+}
+
+a:hover{
+    text-decoration: underline;
+    color:#3ac527;
+}
+
+body { 
+    background-color: #66e782;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:auto;
+    
+}
+
+p >a{
+    text-decoration: none;
+    color: rgb(236, 6, 6)
+}
+
+header {
+    text-align:center;
+    background-image: linear-gradient(180deg, #04DB33, #063f13);  
+    padding: 25px 5px 15px 5px;
+    color: white;
+       
+}
+
+header >h1{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.425);
+}
+
+nav{
+    text-align:left;
+    margin: 10px 0px 0px 0px;
+
+    
+}
+
+main{
+    background-color: white;
+    /*margin: 0px 80px 15px 80px;*/
+    margin:auto;
+    min-width: 280px; /* é a dimensão minima q a pagina suporta*/
+    max-width: 900px; /* é a dimensão max que a pagina suporta sem quabrar*/
+    padding: 15px 0px 15px 0px;
+    box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.39);
+    text-indent: 20px;
+
+}
+
+main p{
+    margin: 10px 0px;
+    text-align: justify;
+    line-height: 1.2em;
+}
+
+footer{
+    text-align:center;
+    background-color: #063f13;
+    color: white;
+}
+
+
+
+div#video{
+    text-align:center;
+    margin: 20px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
+    background-color: #063f13;
+    position: relative;  /*Essa e a connfig. a baixo é para tornar responsivo*/
+    padding-bottom: 54%;  
+}
+
+div#video > iframe{  /*GAMBIARRA PARA TORNAR O VIDEO RESPONSIVO*/
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+section#infos{
+    background-color: rgb(194, 253, 194);
+    border-radius: 0px 0px 10px 10px;
+    padding: 0px 0px 15px 0px;
+    box-shadow: 0.6px 0.6px 0.6px rgba(0, 0, 0, 0.479)
+}
+
+section#infos >ul{
+    columns: 2;
+}
+
+p#subtitulo{
+    margin:20px 0px 0px 0px;
+    color:#a4e2b1;
+}
+
+div.imagens{
+    text-align:center;
+    width:auto;
+}
+
+div.titulos{
+    font-family: idroid, serif;
+    margin: 0px 10px 10px 0px;
+}
+
+.titulogrifado{
+    background-color: rgb(185, 241, 185);
+}
+
+article{
+    margin: 10px 10px 10px 10px;
+}
+
+section{
+    margin: 10px 10px 10px 10px;
+}
+
+h3#titulofinal{
+    background-color: #0ac031;
+    color:white;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px; 
+}
+
+aside{
+    margin: 0px 100px 0px 0px;
+}
+
