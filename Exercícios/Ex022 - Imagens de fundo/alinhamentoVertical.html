@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Alinhamento Vertical</title>
+    <style>
+        
+        #container { 
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            
+            position: relative; /*O elemento de fora sempre é relativo (pai)*/
+            height: 95vh;
+            padding: 10px;
+            background-color: rgb(3, 230, 238);
+        }
+        
+        #conteudo{
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+
+            position: absolute; /*O elemento de dentro sempre é absoluto filho*/
+            height: 200px;
+            width: 400px;
+            background-color: rgb(57, 28, 223);
+            
+            left: 50%;
+            top: 50%; /*fica "centralizado" com a ponta superior esquerda ao centro, não é isso o que a gente quer então temos q fazer isso: */
+            
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
