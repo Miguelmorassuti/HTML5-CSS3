@@ -19,6 +19,7 @@ header{
 header >h1{
     font-family: Passion One, serif;
     font-size: 8vw;
+    font-variant: small-caps;
 }
 
 header >p{
