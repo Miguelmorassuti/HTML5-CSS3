@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width:95vw;
+            height: 400px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque modi, cumque aperiam ab neque necessitatibus nam voluptates nulla atque in eaque molestiae officiis saepe aut delectus facilis placeat ea magni. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, laboriosam quam dolorem explicabo exercitationem aperiam cumque, saepe in consequuntur, velit voluptates labore sit rerum perferendis quo. Consequatur ipsa excepturi modi. Doloribus est iusto atque rem sit expedita, sequi ullam dicta. Quaerat, dolore sequi! Cum itaque quos iusto libero officia repudiandae sequi, ipsum eum numquam ratione perferendis suscipit dolorem autem corporis aut totam debitis eligendi aspernatur blanditiis repellat pariatur illum, minima repellendus. Repellat facere doloribus natus odio vitae voluptatem soluta sint quasi perspiciatis, ea saepe aperiam error alias sapiente fuga id dignissimos iusto ad cum porro molestiae debitis similique vero hic?</p>
+
+    <!--Abrindo um Link dentro do Iframe-->
+    <ul>
+        <li><a href="pag-extras/pagina01.html" target="frame">Primeira Página</a></li>
+        <li><a href="pag-extras/pagina02.html" target="frame">Segunda Página</a></li>
+        <li><a href="pag-extras/pagina03.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corporis temporibus explicabo velit dolor excepturi sapiente vitae, vero dolores eum nesciunt eos iusto earum harum reprehenderit ipsa rerum minus officia!</p>
+
+    <!-- Propriedade Name é o segredo-->
+    <iframe id="tela" name="frame" srcdoc="<h1 id='h1iframe'>ESCOLHA UMA DAS OPÇÕES ACIMA, POR FAVOR</h1>" frameborder="1">
+        <p>Infelizmente seu navegador não é compatível com isso</p>
+    </iframe>
+
+</body>
+</html>
