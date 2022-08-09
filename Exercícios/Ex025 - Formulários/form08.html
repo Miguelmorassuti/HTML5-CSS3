@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        h1{text-align: center; margin: 50px;}
+
+        div#contas1{
+            text-align: center;
+            background-color: rgb(62, 189, 89);
+            padding: 10px;
+            width: 90vw;
+            height: 150px;
+            margin: auto;
+        }
+
+        div#controlador{
+            text-align: center;
+            background-color: rgb(200, 202, 78);
+            padding: 10px;
+            width: 90vw;
+            height: 150px;
+            margin: auto;
+        }
+
+        div#idadi{
+            text-align: center;
+            background-color: rgb(42, 165, 187);
+            padding: 10px;
+            width: 90vw;
+            height: 150px;
+            margin: auto;
+        }
+
+        div#botoes{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <div id="contas1">
+            <p>
+                <label for="n1">Numero 1</label>
+                <input type="number" name="num1" id="n1" required min="1" max="10"
+                oninput="isoma.innerHTML = Number(n1.value) + Number(n2.value)">
+            </p>
+            <p>
+                <label for="n2">Numero 2:</label>
+                <input type="number" name="num2" id="n2" required min="1" max="10"
+                oninput="isoma.innerHTML = Number(n1.value) + Number(n2.value)">
+                <!-- oninput ja envolve conhecimentos de HTML, porém os calculos aq realizados n são transmitidos quando enviamos -->
+            </p>
+            <p>
+                <label for="isoma">Soma:</label>
+                <output name="soma" id="isoma">0</output> 
+            <!-- tag output é para a saída, n altera valores em sua struct -->
+            </p>
+        </div>
+        <!-- --------------------------------------------------------------- -->
+        <div id="controlador">
+            <label for="icont">Controlador:</label>
+            <input type="range" name="cont" id="icont" value="50" min="0" max="100" oninput="ival.innerHTML = Number(icont.value)">
+            <output id = "ival">50</output>
+        </div>
+        
+        <!-- --------------------------------------------------------------- -->
+        <div id="idadi">
+            <p>
+                <label for="iano">Em que ano você nasceu?</label>
+                <input type="number" name="ano" id="iano" min="1900" max="2022"
+                oninput="calcIdade()">
+            </p>
+            <p>
+                <label for="idade">Sua idade é de:</label>
+                <output id="idade">0</output>
+            </p>
+        </div>
+
+
+        <div id="botoes">
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar Campos">
+            </p>
+        </div>
+    </form>
+
+    <!-- FUNÇÃO PARA CALCULAR A IDADE DE UM USUÁRIO -->
+    <script>
+          function calcIdade(){
+            let atual = new Date().getFullYear()
+            idade.innerHTML = Number(atual) - Number(iano.value)
+            }
+    </script>
+
+</body>
+</html>
