@@ -1,0 +1,60 @@
+<!-- OUTRA FORMA DE FAZER O MQ02 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /*DECLARAÇÕES GERAIS*/
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #233eff;
+            /*Declarei da msm cor da imagem, pq a imagem n cobre tudo, o que n cobrir essa cor cobre*/
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 3px 3px 0px rgb(214, 107, 31);
+            padding: 10px;
+        }
+
+        /*DECLARAÇÕES RETRATO*/
+        @media screen and (orientation: portrait) {
+            body {
+
+                background-image: url(../imagens/cev-portrait.jpg);
+                background-position: center bottom;
+            }
+        }
+
+        /*DECLARAÇÕES PAISAGEM*/
+        @media screen and (orientation: landscape) {
+            body {
+
+                background-image: url(../imagens/cev-landscape.jpg);
+                background-position: left bottom;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <H1>Mude a orientação do seu dispositivo</H1>
+</body>
+
+</html>
