@@ -1,53 +1,67 @@
 import './styles/App.css';
-
 import userIcon from './images/user.svg';
 import paperPlaneIcon from './images/paper-plane.svg';
 import clockIcon from './images/clock.svg';
 import EmptyFolder from './images/empty-folder.svg';
 import './styles/PostForm.css';
 import './styles/Feed.css';
-
+import { useState } from 'react'; //Função que vai ajudar na hora de recarregar
+                                  //a pagina quando o usuario fizer novos posts
 
 export default function App() { //Export default = para poder importar no index
-   
-/*   const posts = [
+    const [history, setHistory] = useState('');
+    const [userName, setUsername] = useState('');
+    const [posts, setPosts] = useState([]) 
+ 
 
-        {
-            id: Math.random(),             
-            content: 'Conteudo do post',
-            userName: 'Miguel',
-            publishedAt: new Date(),
-        }
-       ] */
-    const posts = []
+       function handleSubmit(event) {
+            event.preventDefault();//Para evitar o recarregamento autom. da pag.
 
-    return
-    (
+           setPosts([  //criando novos posts
+            ...posts, //Para renderizar os posts feitos no codigo  
+            {
+                id: Math.random(),      
+                content: history,
+                userName:  userName,
+                publishedAt: new Date()
+            }
+           ])       
+       }
+
+    return(
         <div className="wrapper">
             {/* JSX nao consegue ler array de objetos, devo passar um array de strings entao! */}
 
-            <form className="post-form" onSubmit={() => alert("Formulario Submetido")}>
-                <input type='text' placeholder="Escreva uma nova história..." />
+            <form className="post-form" onSubmit={handleSubmit}>
+                <input value={history} //Para apagar sempre apos inserção
+                 placeholder="Escreva uma nova história..." 
+                 onChange={(event) => setHistory(event.target.value)} /> 
+                {/*Evento responsável por pegar a entrada de caracteres*/ }
+                
+
                 <div>
                     <img src={userIcon} alt='User' />
 
-                    <input type='text' placeholder="Digite seu nome" />
+                    <input value={userName} //Para apagar sempre apos inserção
+                     type='text' placeholder="Digite seu nome"
+                     onChange={(event) => setUsername(event.target.value)}/>
+                    {/*Evento responsável por pegar a entrada de caracteres*/ }
+
 
                     <button type="submit">
                         <img src={paperPlaneIcon} alt='Paper plane' />
-
                         Publicar
                     </button>
+
                 </div>
             </form>
             
-    )
 
         <main>
 
-{/*Criando condição para aparecer caso o feed esteja sem conteudo utilizando shorthand (podia fazer tmb com operação ternária)*/}
+            {/*Criando condição para aparecer caso o feed esteja sem conteudo utilizando short circuit evaluation (podia fazer tmb com operação ternária)*/}
       
-                {posts.length<=0 && (        
+                {posts.length===0 && (        
                 <div className="feed-status">
                     <img src={EmptyFolder} alt='Empty Folder'/>
                     <h1>Não encontramos nada</h1>
@@ -56,7 +70,7 @@ export default function App() { //Export default = para poder importar no index
                 )}
                        
 
-{/*Criando condição para aparecer caso o feed esteja com conteudo utilizando operação ternária */}
+            {/*Criando condição para aparecer caso o feed esteja com conteudo utilizando operação ternária */}
 
                 {posts.length> 0? (
                 <>  {/*possibilita colocar 2 elementos irmãos sem pai */} 
@@ -65,7 +79,7 @@ export default function App() { //Export default = para poder importar no index
                         <h2>Acompanhe o que seus amigos estão pensando em tempo real</h2>
                     </header>
 
-                    /*Estou convertendo um array de obj em um novo array para ser lido pelo JSX*/
+                    {/*Estou convertendo um array de obj em um novo array para ser lido pelo JSX*/}
                     <section className="feed">
                         {posts.map((post) =>(  
                             
@@ -85,10 +99,10 @@ export default function App() { //Export default = para poder importar no index
                         ))}
                         
                     </section>
+                    </> 
                     ) : null}
                     
             </main>
-
         </div>
     );
 }
