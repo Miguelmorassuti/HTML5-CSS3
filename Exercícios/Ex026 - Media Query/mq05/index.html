@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css"/>
     <title>Media Query</title>
 </head>
-<body>
+    <body>
     <header>
         <h1>Meu Site</h1>
-        <nav>
+
+        <!-- Importando simbolo pela web (pesquisar na net guia de simbolos )-->
+        <span id="burguer" class="material-symbols-outlined" onclick="menu()">
+         menu          <!--Nome do simbolo que quero importar-->
+        </span>
+
+        <nav id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -20,6 +27,7 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <article>
             <h2>Testando Media Queries</h2>
@@ -33,5 +41,7 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis ipsa praesentium corrupti natus provident saepe velit aliquam minus rem itaque, dolore harum ea nulla quibusdam nostrum voluptate illum. Vero, ipsam.</p>
         </article>
     </main>
+
+    <script src="index.js"></script>
 </body>
 </html>
