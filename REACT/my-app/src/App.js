@@ -1,12 +1,12 @@
 import './styles/App.css';
 import userIcon from './images/user.svg';
 import paperPlaneIcon from './images/paper-plane.svg';
-import clockIcon from './images/clock.svg';
-import EmptyFolder from './images/empty-folder.svg';
 import './styles/PostForm.css';
 import './styles/Feed.css';
+import Feed from './components/feed.js'; //Import da função feed do arq feed.js
 import { useState } from 'react'; //Função que vai ajudar na hora de recarregar
                                   //a pagina quando o usuario fizer novos posts
+                         
 
 export default function App() { //Export default = para poder importar no index
     const [history, setHistory] = useState('');
@@ -26,6 +26,10 @@ export default function App() { //Export default = para poder importar no index
                 publishedAt: new Date()
             }
            ])       
+
+           //Para apagar os dados dos inputs apos os dados serem lidos e salvos
+           setHistory("");
+           setUsername("")
        }
 
     return(
@@ -38,7 +42,6 @@ export default function App() { //Export default = para poder importar no index
                  onChange={(event) => setHistory(event.target.value)} /> 
                 {/*Evento responsável por pegar a entrada de caracteres*/ }
                 
-
                 <div>
                     <img src={userIcon} alt='User' />
 
@@ -57,52 +60,9 @@ export default function App() { //Export default = para poder importar no index
             </form>
             
 
-        <main>
-
-            {/*Criando condição para aparecer caso o feed esteja sem conteudo utilizando short circuit evaluation (podia fazer tmb com operação ternária)*/}
-      
-                {posts.length===0 && (        
-                <div className="feed-status">
-                    <img src={EmptyFolder} alt='Empty Folder'/>
-                    <h1>Não encontramos nada</h1>
-                    <h2>Parece que você e seus amigos não postaram nada. Comece a   escrever uma nova história!</h2>
-                </div>
-                )}
-                       
-
-            {/*Criando condição para aparecer caso o feed esteja com conteudo utilizando operação ternária */}
-
-                {posts.length> 0? (
-                <>  {/*possibilita colocar 2 elementos irmãos sem pai */} 
-                    <header>
-                        <h1>Seu Feed</h1>
-                        <h2>Acompanhe o que seus amigos estão pensando em tempo real</h2>
-                    </header>
-
-                    {/*Estou convertendo um array de obj em um novo array para ser lido pelo JSX*/}
-                    <section className="feed">
-                        {posts.map((post) =>(  
-                            
-                            <article key={post.id}>          
-                            <p>{post.content}</p>
-                            <footer>
-                                <div className="user-details">
-                                    <img src={userIcon} alt="User" />
-                                    <strong>{post.userName}</strong>
-                                </div>
-                                <div className="time">
-                                    <img src={clockIcon} alt="time" />
-                                    <span>Publicado em {post.publishedAt.toLocaleDateString("pt-br")}</span>
-                                </div>
-                            </footer>
-                        </article>
-                        ))}
-                        
-                    </section>
-                    </> 
-                    ) : null}
-                    
-            </main>
+        <main> 
+            <Feed posts={posts} />  {/*Feed é um componente filho do App.js */}
+        </main>
         </div>
     );
 }
