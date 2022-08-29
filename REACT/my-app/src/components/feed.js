@@ -1,9 +1,10 @@
+import '../styles/Feed.css';
 import clockIcon from '../images/clock.svg';
 import EmptyFolder from '../images/empty-folder.svg';
 import userIcon from '../images/user.svg';
 
 export default function Feed(props) {
-    if (props.posts.length == 0) {
+    if (props.posts.length == 0) { //Props é pq recebe do component pai (App.js)
         return (
             <div className="feed-status">
                 <img src={EmptyFolder} alt='Empty Folder' />
@@ -20,8 +21,11 @@ export default function Feed(props) {
             </header>
 
             {/*Estou convertendo um array de obj em um novo array para ser lido pelo JSX*/}
-            <section className="feed">
-                {props.posts.map((post) => (
+            <section className="feed"> 
+            
+            {/* JSX nao consegue ler array de objetos, devo passar um array de strings entao! */}
+
+                {props.posts.map((post) => (  //o pq do props na linha 7
 
                     <article key={post.id}>
                         <p>{post.content}</p>
