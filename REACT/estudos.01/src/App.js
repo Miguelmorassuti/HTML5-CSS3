@@ -1,25 +1,26 @@
 import HelloWorld from './components/HelloWorld'; //Importando componente
 import './App.css';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
-  const name = 'Miguel'
-  const idade = 19
-  const url='https://via.placeholder.com/150'
-
-  const sum = (x, y)=>{ //É possivel invocar funções no HTML
-    return (x+y)
-  }
+  const craque = 'Pelé'
 
   return (
     
     //CLASSE NO JSX É CLASSNAME
     <div className="App"> 
-      <h1>Alterando o JSX</h1>
-       <p>Olá {name}</p>
-      <p>Idade: {idade} anos</p>
-      <p>Soma: {sum(10,17)}</p> 
-      <img src={url} alt= "Minha Imagem"/>  
+      <frase />
       <HelloWorld/>  
+      <SayMyName name= "Clebão da 011"/>
+      <SayMyName name= "Luqueta"/>
+      <SayMyName name= {craque}/>
+      <Pessoa 
+      Nome="Miguel"
+      Idade="19"
+      Profissão="Estudante"
+      Foto="https://via.placeholder.com/150"
+    />
     </div>
   );
 }
