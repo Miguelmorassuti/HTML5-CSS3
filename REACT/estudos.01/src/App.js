@@ -2,6 +2,7 @@ import HelloWorld from './components/HelloWorld'; //Importando componente
 import './App.css';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
+import List from './components/List';
 
 function App() {
   const craque = 'Pelé'
@@ -10,9 +11,8 @@ function App() {
     
     //CLASSE NO JSX É CLASSNAME
     <div className="App"> 
-      <frase />
+    
       <HelloWorld/>  
-      <SayMyName name= "Clebão da 011"/>
       <SayMyName name= "Luqueta"/>
       <SayMyName name= {craque}/>
       <Pessoa 
@@ -21,6 +21,7 @@ function App() {
       Profissão="Estudante"
       Foto="https://via.placeholder.com/150"
     />
+    <List/>
     </div>
   );
 }
