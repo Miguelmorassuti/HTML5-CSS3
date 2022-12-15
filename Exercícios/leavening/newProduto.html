@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de produto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="vendas.html">Vendas</a>
+            <a href="listProduto.html">Listagem de produtos</a>
+            <a href="newProduto.html">Criar novo produto</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="cadastro" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Novo cadastro</legend>
+                <p>
+                    <label for="iid">Id</label>
+                    <input 
+                    type="number" 
+                    name="iid" 
+                    id="iid" 
+                    required 
+                    placeholder="Digite o ID:"
+                    >
+                </p>
+
+                <p>
+                    <label for="inome">Nome</label>
+                    <input
+                    type="text"
+                    name="nome"
+                    id="inome" 
+                    required
+                    placeholder="Digite o nome do produto"
+                    >
+                </p>
+                <p>
+                    <label for="iqtd">Quantidade </label>
+                    <input 
+                    type="number" 
+                    name="quantidade" 
+                    id="iqtd" 
+                    required 
+                    placeholder="Digite a qtd em estoque:">
+                </p>
+
+                <p>
+                    <label for="ivalor">Valor (R$)</label>
+                    <input 
+                    type="number" 
+                    name="valor" 
+                    id="ivalor" 
+                    required 
+                    placeholder="Digite o valor de venda">
+                </p>
+
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            
+        </form>
+    </main>
+
+    <footer>
+        <p>MGM - E-COMMERCE</p>
+    </footer>
+</body>
+</html>
