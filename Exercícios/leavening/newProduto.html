@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta https="Content-Security-Policy" content="default-src 'self">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Criação de produto</title>
 </head>
 <body>
     <header>
-        <h1>E-commerce MGM</h1>
+        <h1>0ne Computer</h1>
         <h2>Criação de produto</h2>
         <nav>
             <a href="index.html">Início</a>
@@ -23,18 +24,19 @@
         <form action="cadastro" method="post" autocomplete="on">
             <fieldset>
                 <legend>Novo cadastro</legend>
-                <p>
-                    <label for="iid">Id</label>
+                
+                <div>
+                    <label for="cod">Código</label>
                     <input 
                     type="number" 
-                    name="iid" 
-                    id="iid" 
+                    name="cod" 
+                    id="cod" 
                     required 
                     placeholder="Digite o ID:"
                     >
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <label for="inome">Nome</label>
                     <input
                     type="text"
@@ -43,8 +45,9 @@
                     required
                     placeholder="Digite o nome do produto"
                     >
-                </p>
-                <p>
+                </div>
+
+                <div>
                     <label for="iqtd">Quantidade </label>
                     <input 
                     type="number" 
@@ -52,9 +55,9 @@
                     id="iqtd" 
                     required 
                     placeholder="Digite a qtd em estoque:">
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <label for="ivalor">Valor (R$)</label>
                     <input 
                     type="number" 
@@ -62,12 +65,12 @@
                     id="ivalor" 
                     required 
                     placeholder="Digite o valor de venda">
-                </p>
+                </div>
 
             </fieldset>
 
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
+            <button type="submit">Criar</button>
+            <button type="reset">Limpar</button>
             
         </form>
     </main>
