@@ -29,7 +29,6 @@ header>h1 {
 
 nav {
     margin: 20px; 
-
 }
 
 nav>a{
@@ -56,14 +55,12 @@ footer{
     align-items: center;
     background-color: #006C78;
     height: 150px;
-    
 }
 
 footer>p{
     font-weight: bolder;
-    font-size: 2.5em;
-    color: white;
-    
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
 }
 
 footer>section>p{
@@ -76,3 +73,4 @@ footer>section>a{
     display: flex;
     margin-top: 3px;
 }
+

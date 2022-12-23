@@ -7,6 +7,7 @@
     <meta https="Content-Security-Policy" content="default-src 'self">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/geral.css">
+    <link rel="stylesheet" href="estilos/newProduto.css">
     <title>Criação de produto</title>
 </head>
 <body>
@@ -22,56 +23,63 @@
     </header>
 
     <main>
-        <form action="cadastro" method="post" autocomplete="on">
-            <fieldset>
-                <legend>Novo cadastro</legend>
+        <form class="formCadastro" action="cadastro" method="post" autocomplete="on">
+            <fieldset class="divForm">
+                <legend class="titleForm">Novo cadastro</legend>
                 
-                <div>
-                    <label for="cod">Código</label>
-                    <input 
-                    type="number" 
-                    name="cod" 
-                    id="cod" 
-                    required 
-                    placeholder="Digite o ID:"
-                    >
-                </div>
+               
+                    <section class="caixaInputs">
+                        <div class="divput">
+                            <label for="cod">Icon 1</label>
+                            <input
+                            type="number"
+                            name="cod"
+                            id="cod"
+                            class="formput"
+                            required
+                            placeholder="Digite o ID do produto:"
+                            >
+                        </div>
+                        <div class="divput">
+                            <label for="inome">Icon 2</label>
+                            <input
+                            type="text"
+                            name="nome"
+                            id="inome"
+                            class="formput"
+                            required
+                            placeholder="Digite o nome do produto"
+                            >
+                        </div>
+                        <div class="divput">
+                            <label for="iqtd">Icon 3</label>
+                            <input
+                            type="number"
+                            name="quantidade"
+                            id="iqtd"
+                            class="formput"
+                            required
+                            placeholder="Digite a qtd em estoque:">
+                        </div>
+                        <div class="divput">
+                            <label for="ivalor">Icon 4</label>
+                            <input
+                            type="number"
+                            name="valor"
+                            id="ivalor"
+                            class="formput"
+                            required
+                            placeholder="Digite o valor de venda">
+                        </div>
+                    </section>
+                    
 
-                <div>
-                    <label for="inome">Nome</label>
-                    <input
-                    type="text"
-                    name="nome"
-                    id="inome" 
-                    required
-                    placeholder="Digite o nome do produto"
-                    >
-                </div>
-
-                <div>
-                    <label for="iqtd">Quantidade </label>
-                    <input 
-                    type="number" 
-                    name="quantidade" 
-                    id="iqtd" 
-                    required 
-                    placeholder="Digite a qtd em estoque:">
-                </div>
-
-                <div>
-                    <label for="ivalor">Valor (R$)</label>
-                    <input 
-                    type="number" 
-                    name="valor" 
-                    id="ivalor" 
-                    required 
-                    placeholder="Digite o valor de venda">
-                </div>
-
+                    <div class="buttons">
+                        <button class="entrar" type="submit">CRIAR</button>
+                        <button class="entrar" type="reset">LIMPAR</button>
+                    </div>
+       
             </fieldset>
-
-            <button type="submit">Criar</button>
-            <button type="reset">Limpar</button>
             
         </form>
     </main>

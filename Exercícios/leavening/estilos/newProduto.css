@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+ 
+}
+
+.formCadastro{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
+    width: 80vw;
+    height: 72.4vh;
+    overflow: auto;
+}
+
+
+.divput{
+    margin-top: 5px;
+    
+}
+
+.divput>label{
+    font-weight: bold;
+    color: white;
+    font-size: 1em;
+}
+
+
+.divForm{
+    height: 600px;
+    /* width: 60%; */
+    width: 400px;
+    background-color: #006C78;
+    border-radius: 20px;
+    box-shadow: 1px 2px 2px rgb(4, 29, 77);  
+   
+}
+
+.titleForm{
+    font-size: 4vw;
+    font-weight: bold;
+    color: #000000;
+}
+
+.formput{
+    border-radius: 6px;
+    width: 78%;
+    margin-bottom: 20px;
+    /* height: 3vw; */
+    padding: 15px 0px;
+    background-color: #73cfda;
+    
+}
+
+
+.caixaInputs{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2vh;
+}
+
+div.buttons{
+    margin-top: 3vw;
+  
+}
+
+button.entrar{
+    background-color: #00DFF7;
+    border-radius: 8px;
+    width: 90%;
+    color: white;
+    margin: auto;
+    margin-bottom: 15px;
+    /* padding: 1.2vw 0px; */
+    padding: 15px 0px;
+    font-weight: bold;
+    font-size: 2vw; 
+   
+    
+}
+
+button.entrar:hover{
+    background-color: #006C78;
+    cursor: pointer;
+}
+
