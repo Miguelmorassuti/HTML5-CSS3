@@ -14,8 +14,7 @@ header {
     flex-wrap: wrap; */
     justify-content: space-between; 
     align-items: center;
-    background-color: #006C78;
-   
+    background-image: linear-gradient(to right, #002992, #3152A4);
 }
 
 header>h1 {
@@ -24,7 +23,10 @@ header>h1 {
     font-family: arial,sans-serif;
     font-size: 3em;
     color: white;
+}
 
+.title{
+    font-family: 'Audiowide', cursive;
 }
 
 nav {
@@ -34,17 +36,17 @@ nav {
 nav>a{
     text-decoration: none;
     padding: 14px;
-   
     border: 1px solid rgba(0, 0, 0, 0.459);
     border-radius: 5px; 
-    background-color: #00DFF7;
+    background-color: #4b69b5;
     color: white;
 }
 
 a:hover {
-    background-color: #003238;
+    background-color: #0f2354;
     transition: 0.5s;
-}    
+}
+
 
 
 footer{
@@ -53,7 +55,7 @@ footer{
     flex-flow: row wrap;   
     justify-content: space-around;
     align-items: center;
-    background-color: #006C78;
+    background-image: linear-gradient(to right, #002992, #3152A4);
     height: 150px;
 }
 

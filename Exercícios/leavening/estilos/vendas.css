@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.container{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header{
+
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+    background-image: url(../images/imageFundo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+   
+}      
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    background-color: #3152A4;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 400px;
+    margin: 10px 20px 10px 10px;
+}
+
+.buttons{
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: cornflowerblue;
+    margin: 5px 0px 5px 0px;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+.buttons:hover{
+    background-color:  #002992;
+}
+
+.price{
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.productName{
+    font-size: 1.5em;
+    margin: 10px 0px;
+    cursor: pointer;
+    color: white;
+}
+
+.productDesc{
+    color: rgb(201, 201, 201);
+    font-weight: bold;
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.divImage{
+    width: 100%;
+ 
+}
+
+footer{
+    flex-shrink: 0;
+}
+
+

@@ -6,99 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta https="Content-Security-Policy" content="default-src 'self">
     <link rel="stylesheet" href="estilos/geral.css">
+    <link rel="stylesheet" href="estilos/vendas.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <title>Página de vendas</title>
 </head>
 <body>
-    <header>
-        <h1>0ne Computer</h1>
-        <h2>Página de vendas</h2>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="vendas.html">Vendas</a>
-            <a href="listProduto.html">Lista de produtos</a>
-            <a href="newProduto.html">Criar produto</a>
-        </nav>
-    </header>
-
-    <main>
-        <article>
-            <figure>
-                <img src="images/image01.jpg" alt="produto x">
-            </figure>
-            <section>
-                <h3>Produto x</h3>
-                <div>
-                    <p>Apresentamos o produto x, ele é utilizado para...</p>
-                </div>
-                <div>
-                    <button>COMPRAR AGORA</button>
-                    <button>ADICIONAR À SACOLA</button>
-                </div>
-                <div>
-                    <h3>R$300,00</h3>
-                </div>
-            </section>
-        </article>
-
-        <article>
-            <figure>
-                <img src="images/image01.jpg" alt="produto x">
-            </figure>
-            <section>
-                <h3>Produto x</h3>
-                <div>
-                    <p>Apresentamos o produto y, ele é utilizado para...</p>
-                </div>
-                <div>
-                    <button>COMPRAR AGORA</button>
-                    <button>ADICIONAR À SACOLA</button>
-                </div>
-                <div>
-                    <h3>R$200,00</h3>
-                </div>
-            </section>
-        </article>
-
-        <article>
-            <figure>
-                <img src="images/image01.jpg" alt="produto x">
-            </figure>
-            <section>
-                <h3>Produto x</h3>
-                <div>
-                    <p>Apresentamos o produto z, ele é utilizado para...</p>
-                </div>
-                <div>
-                    <button>COMPRAR AGORA</button>
-                    <button>ADICIONAR À SACOLA</button>
-                </div>
-                <div>
-                    <h3>R$500,00</h3>
-                </div>
-            </section>
-        </article>
+    <div class="container">
         
-        
-    </main>
+        <header>
+            <h1 class="title">0ne Computer</h1>
+            <h2>Página de vendas</h2>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="vendas.html">Vendas</a>
+                <a href="listProduto.html">Lista de produtos</a>
+                <a href="newProduto.html">Criar produto</a>
+            </nav>
+        </header>
 
-    <footer>
-        <p>0ne Computer</p>
+        <main class="main">
+            <article class="cards">
+                    <picture class="divImage">
+                        <img class="img" src="images/image01.jpg" alt="produto x">   
+                    </picture>         
+                        <h3 class="productName">Produto x</h3>     
+                            <span class="productDesc">Apresentamos o produto x, ele é utilizado para...</span>       
+                            <h3 class="price">R$300,00</h3>
+                            <button class="buttons">COMPRAR AGORA</button>
+                            <button class="buttons">ADICIONAR À SACOLA</button>
+                            
+                    
+            </article>
 
-        <section>
-            <h3>Contato</h3>
-            <p>(14) 997070-7070</p>
-            <p>(14) 3478-7070</p>
-            <p>0necomputer@gmail.com</p>
-        </section>
+            <article class="cards">
+                    <picture class="divImage">
+                        <img class="img" src="images/image01.jpg" alt="produto x">
+                    </picture>
+                        <h3 class="productName">Produto x</h3>    
+                        <span class="productDesc">Apresentamos o produto y, ele é utilizado para...</span>
+                            <h3 class="price">R$200,00</h3>
+                            <button class="buttons">COMPRAR AGORA</button>
+                            <button class="buttons">ADICIONAR À SACOLA</button>          
+                            
+                    
+            </article>
 
-        <section>
-            <h3>Ajuda</h3>
-            <a href="#">SAC</a>
-            <a href="#">Fale conosco</a>
-            <a href="#">Termos de aceite</a>
-            <a href="#">Políticas de Privacidade</a>
-        </section>
-    </footer>
+            <article class="cards">
+                    <picture class="divImage">
+                        <img class="img" src="images/image01.jpg" alt="produto x">
+                    </picture>
+                        <h3 class="productName">Produto x</h3>
+                        <span class="productDesc">Apresentamos o produto z, ele é utilizado para...</span>                           
+                            <h3 class="price">R$500,00</h3>
+                            <button class="buttons">COMPRAR AGORA</button>
+                            <button class="buttons">ADICIONAR À SACOLA</button>
+                            
+            </article>
+            
+            <article class="cards">
+                <picture class="divImage">
+                    <img class="img" src="images/image01.jpg" alt="produto x">
+                </picture>
+                    <h3 class="productName">Produto x</h3>
+                    <span class="productDesc">Apresentamos o produto t, ele é utilizado para...</span>                           
+                        <h3 class="price">R$500,00</h3>
+                        <button class="buttons">COMPRAR AGORA</button>
+                        <button class="buttons">ADICIONAR À SACOLA</button>
+                        
+            </article>
+
+            <article class="cards">
+                <picture class="divImage">
+                    <img class="img" src="images/image01.jpg" alt="produto x">
+                </picture>
+                    <h3 class="productName">Produto r</h3>
+                    <span class="productDesc">Apresentamos o produto m, ele é utilizado para...</span>                           
+                        <h3 class="price">R$100,00</h3>
+                        <button class="buttons">COMPRAR AGORA</button>
+                        <button class="buttons">ADICIONAR À SACOLA</button>
+                        
+            </article>
+
+            <article class="cards">
+                <picture class="divImage">
+                    <img class="img" src="images/image01.jpg" alt="produto x">
+                </picture>
+                    <h3 class="productName">Produto x</h3>
+                    <span class="productDesc">Apresentamos o produto n, ele é utilizado para...</span>                           
+                        <h3 class="price">R$600,00</h3>                       
+                        <button class="buttons">COMPRAR AGORA</button>
+                        <button class="buttons">ADICIONAR À SACOLA</button>
+                       
+            </article>
+
+            <article class="cards">
+                <picture class="divImage">
+                    <img class="img" src="images/image01.jpg" alt="produto x">
+                </picture>
+                    <h3 class="productName">Produto x</h3>
+                    <span class="productDesc">Apresentamos o produto n, ele é utilizado para...</span>                           
+                        <h3 class="price">R$600,00</h3>                       
+                        <button class="buttons">COMPRAR AGORA</button>
+                        <button class="buttons">ADICIONAR À SACOLA</button>
+                       
+            </article>
+
+            <article class="cards">
+                <picture class="divImage">
+                    <img class="img" src="images/image01.jpg" alt="produto x">
+                </picture>
+                    <h3 class="productName">Produto x</h3>
+                    <span class="productDesc">Apresentamos o produto n, ele é utilizado para...</span>                           
+                        <h3 class="price">R$600,00</h3>                       
+                        <button class="buttons">COMPRAR AGORA</button>
+                        <button class="buttons">ADICIONAR À SACOLA</button>
+                       
+            </article>
+            
+        </main>
+
+        <footer>
+            <p class="title">0ne Computer</p>
+
+            <section>
+                <h3>Contato</h3>
+                <p>(14) 997070-7070</p>
+                <p>(14) 3478-7070</p>
+                <p>0necomputer@gmail.com</p>
+            </section>
+
+            <section>
+                <h3>Ajuda</h3>
+                <a href="#">SAC</a>
+                <a href="#">Fale conosco</a>
+                <a href="#">Termos de aceite</a>
+                <!-- <a href="#">Políticas de Privacidade</a> -->
+            </section>
+        </footer>
+    </div>
 </body>
 </html>
