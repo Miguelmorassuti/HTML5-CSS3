@@ -14,8 +14,11 @@ main{
 
 table {
     border-collapse: collapse;
-    width: 480px;
-    height: 500px;
+    /* width: 480px;
+    height: 500px; */
+    width: 70%;
+    height: 80%;
+  
 }
 
 td, th {
@@ -28,16 +31,18 @@ thead, tfoot {
 }
 
 caption {
-    background-color: rgb(25, 10, 110);
+    background-color: rgb(14, 14, 102);
     color: white;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
 }
 
+
+
 /*EFEITO ZEBRADO*/
 tbody > tr:nth-child(2n){ /*Pseudo-Classe para ir contando de 2 em 2*/
-    background-color: #3152A4;
+    background-color: #002992;
 }
 
 
@@ -46,7 +51,7 @@ tbody > tr:nth-child(2n){ /*Pseudo-Classe para ir contando de 2 em 2*/
 thead > tr > th{
     position:sticky;
     top: -1px;
-    background-color: #8b9ac1;
+    background-color: #284ead;
     color: black;
 }
 
@@ -67,7 +72,7 @@ footer{
 }
 
 tr{
-    background-color: #002992;
+    background-color: #0740cf;
     color:rgb(221, 225, 235);
 }
 

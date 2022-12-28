@@ -4,9 +4,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
-    
+    justify-content: space-between;   
 }
 
 main{
@@ -17,7 +15,6 @@ main{
     background-image: url(../images/imageFundo.jpg);
     background-size: cover;
     background-attachment: fixed;
- 
 }
 
 .formCadastro{
@@ -34,7 +31,9 @@ main{
 
 .divput{
     margin-top: 5px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .divput>label{
@@ -46,12 +45,10 @@ main{
 
 .divForm{
     height: 600px;
-    /* width: 60%; */
     width: 400px;
     background-color: rgb(14, 14, 102);
     border-radius: 20px;
     box-shadow: 1px 2px 2px rgb(4, 29, 77);  
-   
 }
 
 .titleForm{
@@ -63,13 +60,9 @@ main{
 .formput{
     border-radius: 6px;
     width: 78%;
-    margin-bottom: 20px;
-    /* height: 3vw; */
+    margin: 10px 2px;
     padding: 15px 0px;
-    background-color: #4b69b5;
-  
-    
-    
+    background-color: #1e57e9; 
 }
 
 .formput::placeholder{
@@ -85,26 +78,23 @@ main{
 
 div.buttons{
     margin-top: 3vw;
-  
 }
 
 button.entrar{
-    background-color: #4b69b5;
+    background-color: #0740cf;
     border-radius: 8px;
     width: 90%;
     color: white;
     margin: auto;
     margin-bottom: 15px;
-    /* padding: 1.2vw 0px; */
     padding: 15px 0px;
     font-weight: bold;
     font-size: 2vw; 
-   
-    
 }
 
 button.entrar:hover{
-    background-color: #006C78;
+    background-color: #05143b;
     cursor: pointer;
 }
+
 

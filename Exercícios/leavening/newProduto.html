@@ -11,29 +11,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-    <title>Criação de produto</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <title>Registrar Produto</title>
 </head>
 <body>
     <header>
         <h1 class="title">0ne Computer</h1>
-        <h2>Criação de produto</h2>
         <nav>
             <a href="index.html">Início</a>
             <a href="vendas.html">Vendas</a>
-            <a href="listProduto.html">Lista de produtos</a>
-            <a href="newProduto.html">Criar produto</a>
+            <a href="listProduto.html">Lista de itens</a>
+            <a href="newProduto.html">Registrar produto</a>
         </nav>
     </header>
 
     <main>
         <form class="formCadastro" action="cadastro" method="post" autocomplete="on">
             <fieldset class="divForm">
-                <legend class="titleForm">Novo cadastro</legend>
+                <legend class="titleForm">Novo registro</legend>
                 
                
                     <section class="caixaInputs">
                         <div class="divput">
-                            <label for="cod">Icon 1</label>
+                            <label for="cod"><span class="material-symbols-outlined">
+                            fingerprint</span></label>
                             <input
                             type="number"
                             name="cod"
@@ -44,41 +47,44 @@
                             >
                         </div>
                         <div class="divput">
-                            <label for="inome">Icon 2</label>
+                            <label for="inome"><span class="material-symbols-outlined">
+                            drive_file_rename_outline</span></label>
                             <input
                             type="text"
                             name="nome"
                             id="inome"
                             class="formput"
                             required
-                            placeholder="Digite o nome do produto"
+                            placeholder="Digite o nome do produto:"
                             >
                         </div>
                         <div class="divput">
-                            <label for="iqtd">Icon 3</label>
+                            <label for="iqtd"><span class="material-symbols-outlined">
+                            production_quantity_limits</span></label>
                             <input
                             type="number"
                             name="quantidade"
                             id="iqtd"
                             class="formput"
                             required
-                            placeholder="Digite a qtd em estoque:">
+                            placeholder="Digite a quantidade em estoque:">
                         </div>
                         <div class="divput">
-                            <label for="ivalor">Icon 4</label>
+                            <label for="ivalor"><span class="material-symbols-outlined">
+                            price_change </span></label>
                             <input
                             type="number"
                             name="valor"
                             id="ivalor"
                             class="formput"
                             required
-                            placeholder="Digite o valor de venda">
+                            placeholder="Digite o valor de venda (R$)">
                         </div>
                     </section>
                     
 
                     <div class="buttons">
-                        <button class="entrar" type="submit">CRIAR</button>
+                        <button class="entrar" type="submit">REGISTRAR</button>
                         <button class="entrar" type="reset">LIMPAR</button>
                     </div>
        

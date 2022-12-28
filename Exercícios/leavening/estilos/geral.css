@@ -10,11 +10,9 @@ header {
     max-width: 100vw;
     display:flex;
     flex-flow: row wrap;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
     justify-content: space-between; 
     align-items: center;
-    background-image: linear-gradient(to right, #002992, #3152A4);
+    background-image: linear-gradient(to right, #000, #002992);
 }
 
 header>h1 {
@@ -38,7 +36,7 @@ nav>a{
     padding: 14px;
     border: 1px solid rgba(0, 0, 0, 0.459);
     border-radius: 5px; 
-    background-color: #4b69b5;
+    background-color: #0740cf;
     color: white;
 }
 
@@ -55,7 +53,7 @@ footer{
     flex-flow: row wrap;   
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to right, #002992, #3152A4);
+    background-image: linear-gradient(to right, #000, #002992);
     height: 150px;
 }
 
@@ -65,13 +63,14 @@ footer>p{
     color: rgb(255, 255, 255);
 }
 
-footer>section>p{
+footer>section>p, footer>section>h3{
     margin-top: 3px;
+    color: rgb(241, 241, 241);
 }
 
 footer>section>a{
     text-decoration: none;
-    color: black;
+    color: rgb(224, 224, 224);
     display: flex;
     margin-top: 3px;
 }

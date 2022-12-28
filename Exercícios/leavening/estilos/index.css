@@ -31,7 +31,7 @@ main{
 section.desc{
     color: antiquewhite;
     font-size: clamp(1em, 1em + 1vw, 2em);
-    margin-top: 15px;
+    margin-top: 25px;
     text-align: center;
 }
 
